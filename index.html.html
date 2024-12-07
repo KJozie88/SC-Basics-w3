@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baking</title>
+
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(255, 246, 236) 39.5%,
+          rgba(100, 46, 122, 0.23) 100.2%
+        );
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        .container {
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 15px 60px;
+          border-style: solid;
+          border-radius: 20px;
+          border-color: #9b7d61;
+
+          h1 {
+            text-align: center;
+            color: #9b7d61;
+          }
+
+          h2 {
+            text-align: center;
+            border: 1px solid #9b7d61;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 4px;
+          }
+
+          p {
+            line-height: 1.5;
+            font-size: 14px;
+            margin: 20 0 20px;
+          }
+          img {
+            display: block;
+            margin: 0 auto;
+            padding: 10px;
+            max-width: 90%;
+            border-radius: 15px;
+          }
+
+          button {
+            display: block;
+            margin: 30px auto;
+            background-color: #9b7d61;
+            color: #ffffff;
+            font-size: 15px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: all 200ms ease-in-out;
+          }
+
+          button:hover {
+            opacity: 0.8;
+            cursor: pointer;
+          }
+
+          .footer {
+            text-align: center;
+          }
+        }
+        .learn-more {
+          display: block;
+          margin-top: 10px;
+          margin-bottom: 20px;
+          color: #9b7d61;
+          text-decoration: none;
+          font-size: 14px;
+        }
+        .learn-more:hover {
+          text-decoration: underline;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        🥐🧁🥖 <br />
+        I love baking
+      </h1>
+      <h2>especially sweet treats! 😋</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/136/208/original/chunky-chocolate-coconut-and-banana-muffins-101038-1.jpeg?1722323587"
+        alt="Chocolate muffins"
+      />
+      <hr />
+      <p>
+        <strong>Baking</strong> is a method of preparing food that uses dry
+        heat, typically in an oven, but can also be done in hot ashes, or on hot
+        stones. The most common baked item is bread, but many other types of
+        foods can be baked.
+      </p>
+
+      <a href="" target="_blank" class="learn-more">
+        Learn more on Wikipedia 🔍
+      </a>
+      <hr />
+      <button class="recipes-button">Get recipes</button>
+      <p class="footer">
+        This page was built body
+        <a href="https://joziekhanyic155.myportfolio.com/" target=":_blank"
+          ><em>Khanyi Jozie</em></a
+        >
+      </p>
+    </div>
+    <script>
+      function recipes() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+        let email = prompt("What is your email address?");
+
+        if (age <= 14) {
+          alert(
+            "Sorry " +
+              name +
+              ". You need an adult's permission and supervision while baking. Safety first 😊 "
+          );
+        } else {
+          alert(
+            "Thank you " +
+              name +
+              "! We'll be in touch soon with what you need to get baking soon! 🎂"
+          );
+        }
+      }
+
+      let getRecipes = document.querySelector(".recipes-button");
+      getRecipes.addEventListener("click", recipes);
+    </script>
+  </body>
+</html>
